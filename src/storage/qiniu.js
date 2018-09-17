@@ -48,7 +48,7 @@ QiniuStore.prototype.save = function (image) {
 
     return Promise.promisify(qiniu.io.put)(uptoken, key, data, extra)
   }).then(function () {
-    // Remove temp file
+    // Remove te
     return Promise.promisify(fs.unlink)(savedpath)
   }).then(function () {
     // prefix + targetFilename
