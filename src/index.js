@@ -1,4 +1,4 @@
-//var Server = require('./server/server')
+var Server = require('./server/server')
 var express = require('express')
 // var session = require('express-session')
 // var powerexpress = require('power-express')(express)
