@@ -1,0 +1,35 @@
+{
+  "application": {
+    "port": 3000,
+    "captcha": false,
+    "layerName": "zyra",
+    "namespace": "zyra-local",
+    "salt": "__Silenceisgold267524534652123741"
+  },
+  "database": {
+    "redis": {
+      "host": "192.168.0.114",
+      "password": "45aa854425f964c97c23eb5b1cc242cd",
+      "port": 6379
+    },
+    "mysql": {
+      "host": "192.168.0.114",
+      "databaseName": "zyra_test",
+      "username": "root",
+      "password": "3866689909b6e7b627f9a0533deec6a8",
+      "port": 3306
+    }
+  },
+  "rabbitMQ": {
+    "queueName": "cpic-lab-mvt-service-queue",
+    "url": "amqp://cpic:cpic1234@192.168.0.114:5672"
+  },  
+  "chickenUrl":{
+    "init": "http://p2.51zhenpin.cn/frontend.php/api/init",
+    "batch": "http://p2.51zhenpin.cn/frontend.php/api/batch",
+    "code": "http://p2.51zhenpin.cn/frontend.php/api/code",
+    "camera": "http://p2.51zhenpin.cn/frontend.php/api/camera",
+    "domain": "media.51zhenpin.cn"
+  },
+  "proxy": ""
+}
