@@ -96,6 +96,7 @@ var filter = {
     if (agent) {
       for (var i = 0; i < 2; i++) {
         if (agent.indexOf(terminal[i]) > -1) {
+          
           terminalType = 0
           break
         }
