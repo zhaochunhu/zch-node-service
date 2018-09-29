@@ -11,7 +11,7 @@ amqp.connect('amqp://guest:guest@127.0.0.1:5672').then(function(conn){
   //监听成功后向队列发送消息，这里我们就简单发送一个字符串。发送完毕后关闭通道。
       ch.sendToQueue(q,new Buffer(msg));
       console.log(" [x] Sent '%s'",msg);
-      return ch.close()
+      return ch.close();
     });
   })).ensure(function(){ //ensure是promise.finally的别名，不管promise的状态如何都会执行的函数
 //这里我们把连接关闭
