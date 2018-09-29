@@ -22,4 +22,5 @@ amqp.connect('amqp://guest:guest@127.0.0.1:5672').then(function(conn){
       console.log('[*] Waiting for message. To exit press CRTL+C');
     });
   });
-}).then(null,console.warn);//如果报错打印报错信息
+})
+.then(null,console.warn);//如果报错打印报错信息
